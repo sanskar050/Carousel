@@ -20,9 +20,9 @@ function next() {
     }
     else if (counter === (slides.length - 1)) {
         document.querySelector(".next").innerHTML = "Reset"
+        setTimeout(() => {
         counter = 0
         slideImg()
-        setTimeout(() => {
             document.querySelector(".next").innerHTML = "Next"
         }, 1000);
     }
